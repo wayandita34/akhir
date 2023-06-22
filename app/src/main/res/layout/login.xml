@@ -7,7 +7,13 @@
     android:background="@color/white"
     android:layout_height="match_parent">
 
-
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"></ImageView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,6 +29,7 @@
         android:textSize="12sp"
         android:hint="namaanda@gmail.com"
         android:minHeight="48dp"
+        android:id="@+id/edt_email"
         android:layout_marginBottom="30dp">
     </EditText>
 
@@ -39,38 +46,7 @@
         android:textSize="12sp"
         android:hint="*********"
         android:minHeight="48dp"
-        android:layout_marginBottom="30dp"
-        ></EditText>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama Lengkap"
-        android:layout_marginBottom="10dp"
-        ></TextView>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:hint="Nama Anda"
-        android:minHeight="48dp"
-        android:layout_marginBottom="30dp"
-        ></EditText>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No Whattsapp"
-        android:layout_marginBottom="10dp"
-        ></TextView>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:hint="+628xx xxxx xxxx"
-        android:minHeight="48dp"
+        android:id="@+id/edt_password"
         android:layout_marginBottom="30dp"
         ></EditText>
 
@@ -79,6 +55,7 @@
         android:layout_height="wrap_content"
         android:background="@color/purple_700"
         android:textColor="@color/white"
-        android:text="Ubah Akun "></Button>
+        android:id="@+id/btn_login"
+        android:text="Login"></Button>
 
 </LinearLayout>

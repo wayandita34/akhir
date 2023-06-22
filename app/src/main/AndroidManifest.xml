@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -10,22 +10,31 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Aplikasi"
-        tools:targetApi="31">
+        android:theme="@style/Theme.AplikasiKita"
+        tools:targetApi="31" >
         <activity
-            android:name=".Kategori"
+            android:name=".Produkdetail"
             android:exported="false" />
         <activity
-            android:name=".Dashboard"
+            android:name=".Produkkategori"
+            android:exported="false" />
+        <activity
+            android:name=".Produksemua"
+            android:exported="false" />
+        <activity
+            android:name=".Kategori"
             android:exported="false" />
         <activity
             android:name=".Akun"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Aplikasi">
+            android:theme="@style/Theme.AplikasiKita" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

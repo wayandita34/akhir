@@ -1,4 +1,4 @@
-package com.example.aplikasi
+package com.example.aplikasikita
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,16 +11,18 @@ class Kategori : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.kategori);
 
-//        interface list kategori
+//      interface list_kategori
         val lv_kategori:ListView = findViewById(R.id.lv_kategori);
 
-//        membuat data kategori
-        val nama_kategoris:List<String> = ListOf("Jacket","Shirt","T-shirt","Pants","Aksesoris");
+//      membuat data kategori
+        val nama_kategoris:List<String> = listOf("Hijab","Pasmina","Mukena","Gamis","Aksesoris");
 
-//        membuat adapter yang berisikan perulangan data
+//        membuat adapter yang berisi perulangan data
         val perulangan_data:ArrayAdapter<String> = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,nama_kategoris);
 
-//        pasang perulangan data di interface lv_kategori
+//        pasang perulangan_data di interface lv_kategori
         lv_kategori.adapter = perulangan_data;
+
+
     }
 }
