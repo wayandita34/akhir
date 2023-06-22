@@ -15,7 +15,7 @@ class Kategori : ComponentActivity() {
         val lv_kategori:ListView = findViewById(R.id.lv_kategori);
 
 //        membuat data kategori
-        val nama_kategoris:List<String> = ListOf("Jacket","Shirt","T-shirt","Pants","Aksesoris");
+        val nama_kategoris:List<String> = ListOf("hijab","Pasmmina","Mukena","Gamis","Aksesoris");
 
 //        membuat adapter yang berisikan perulangan data
         val perulangan_data:ArrayAdapter<String> = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,nama_kategoris);
